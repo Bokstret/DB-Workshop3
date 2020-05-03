@@ -1,5 +1,4 @@
 import cx_Oracle
-import re
 import csv
 
 username = 'Boks'
