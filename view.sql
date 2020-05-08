@@ -6,7 +6,7 @@ CREATE VIEW PROJECT_COLLECTION AS
         main_category,
         collected,
         goal,
-        currancy,
+        currency,
         launched
     FROM
         project
