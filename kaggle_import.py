@@ -46,7 +46,7 @@ with open(filename, newline='') as file:
             query = """INSERT INTO Project(projectid,title,country,main_category) VALUES (:projectid,:title,:country,:main_category)"""
             cursor.execute(query, projectid = projectid, title=title, country = country, main_category = category)	
 
-            query = """INSERT INTO Collection(projectid,collected,goal,currency,launched) VALUES (:projectid,:collected,:goal,:currency,TO_DATE(:launched,'RR.MM.DD HH24:MI:SS'))"""
+            query = """INSERT INTO Collection(projectid,collected,goal,currancy,launched) VALUES (:projectid,:collected,:goal,:currency,TO_DATE(:launched,'RR.MM.DD HH24:MI:SS'))"""
             cursor.execute(query, projectid = projectid, collected=collected, goal = goal, currency = currency,launched = launched)	
 
             
