@@ -30,7 +30,7 @@ CREATE TABLE projectcountry (
 ALTER TABLE projectcountry ADD CONSTRAINT projectcountry_pk PRIMARY KEY ( country );
 
 ALTER TABLE project
-    ADD CONSTRAINT category_project FOREIGN KEY ( main_category1 )
+    ADD CONSTRAINT category_project FOREIGN KEY ( main_category )
         REFERENCES projectcategory ( main_category );
 
 ALTER TABLE project
