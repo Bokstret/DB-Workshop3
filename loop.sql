@@ -1,6 +1,6 @@
 DECLARE
     TYPE INTS IS VARRAY(15) OF collection.goal%TYPE;
-    TYPE CHARS IS VARRAY(15) OF collection.currency%TYPE;
+    TYPE CHARS IS VARRAY(15) OF collection.currancy%TYPE;
     TYPE DATES IS VARRAY(15) OF collection.launched%TYPE;
     
     Projectid INTS;
