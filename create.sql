@@ -2,7 +2,7 @@ CREATE TABLE collection (
     projectid   INTEGER NOT NULL,
     collected   INTEGER,
     goal        INTEGER,
-    currancy    VARCHAR2(15 CHAR),
+    currency    VARCHAR2(15 CHAR),
     launched    TIMESTAMP
 );
 
