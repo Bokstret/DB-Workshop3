@@ -1,6 +1,6 @@
 DECLARE
     TYPE INTS IS VARRAY(15) OF collection.goal%TYPE;
-    TYPE CHARS IS VARRAY(15) OF collection.currancy%TYPE;
+    TYPE CHARS IS VARRAY(15) OF collection.currency%TYPE;
    
     
     Projectid INTS;
@@ -16,7 +16,7 @@ BEGIN
     
     FOR i IN 1 .. Projectid.count
     LOOP
-        INSERT INTO collection (projectid,collected,goal,currancy) VALUES (Projectid(i), Collected(i), Goal(i), Currency(i));
+        INSERT INTO collection (projectid,collected,goal,currency) VALUES (Projectid(i), Collected(i), Goal(i), Currency(i));
         COMMIT;
     END LOOP;
 END;
