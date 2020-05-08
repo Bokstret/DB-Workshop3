@@ -7,7 +7,7 @@ database = 'localhost'
 connection = cx_Oracle.connect(username,password, database)
 cursor = connection.cursor()
 
-filename = "projects2.csv"
+filename = "projects.csv"
 
 with open(filename, newline='') as file:
     reader = csv.DictReader(file)
