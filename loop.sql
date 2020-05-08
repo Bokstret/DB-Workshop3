@@ -1,6 +1,6 @@
 DECLARE
     TYPE INTS IS VARRAY(15) OF collection.goal%TYPE;
-    TYPE CHARS IS VARRAY(15) OF collection.currency%TYPE;
+    TYPE CHARS IS VARRAY(15) OF collection.currancy%TYPE;
     TYPE DATES IS VARRAY(15) OF collection.launched%TYPE;
     
     Projectid INTS;
@@ -16,7 +16,7 @@ BEGIN
     Launched := DATES('2015-08-11 12:12:28','2013-01-12 00:20:50','2012-03-17 03:24:11','2013-09-09 18:19:37','2016-02-26 13:38:27','2015-05-24 12:47:52','2015-07-08 21:46:53','2014-06-10 00:09:47','2013-06-19 03:16:33','2015-03-01 18:06:32','2015-12-29 16:59:29','2012-05-03 17:24:32','2013-08-15 11:16:24','2015-03-01 05:52:30','2012-02-24 02:52:41');
     FOR i IN 1 .. Projectid.count
     LOOP
-        INSERT INTO collection (projectid,collected,goal,currency,launched) VALUES (Projectid(i), Collected(i), Goal(i), Currency(i), Launched(i));
+        INSERT INTO collection (projectid,collected,goal,currancy,launched) VALUES (Projectid(i), Collected(i), Goal(i), Currency(i), Launched(i));
         COMMIT;
     END LOOP;
 END;
